@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", Helvetica, sans-serif;
+  background: #000000; /* أسود أساسي */
+  color: #ffffff; /* النص أبيض */
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111111; /* أسود أفتح شوي */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+  width: 140px;
+  height: auto;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: #478cbf; /* الأزرق الثانوي */
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #35749c;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+details {
+  background: #111111;
+  border: 1px solid #478cbf;
+  border-radius: 8px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+details[open] {
+  background: #1a1a1a;
+}
+
+summary {
+  background: #478cbf;
+  padding: 12px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+summary:hover {
+  background: #35749c;
+}
+
+details p {
+  padding: 10px 0 0 0;
+  line-height: 1.5;
+  color: #dddddd;
+}
+
+/* Links Section */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #478cbf;
+}
+
+a {
+  text-decoration: none;
+}
